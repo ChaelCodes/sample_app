@@ -13,11 +13,7 @@ class StaticPagesControllerTest < ActionController::TestCase
   
   test "home title is correct" do
     get :home
-<<<<<<< HEAD
     assert_select "title", "Ruby on Rails Tutorial Sample App"
-=======
-    assert_select "title", "Home#{$static_text}"
->>>>>>> static-pages-exercises
   end
   
   #Pages Tests
