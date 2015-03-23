@@ -5,5 +5,10 @@ class UsersControllerTest < ActionController::TestCase
     get :new
     assert_response :success
   end
+  
+  test "new user/signup title is correct" do
+    get :new
+    assert_select "title", full_title("Sign up")
+  end
 
 end
